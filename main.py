@@ -6,6 +6,12 @@ import os
 cogs = [music]
 client = commands.Bot(command_prefix="!", Intents=discord.Intents.all())
 
+@client_.event
+async def on_ready():
+    global bot_id
+    bot_id = client_.user.id
+    await client_.change_presence(status=discord.Status.online, activity=discord.Game("!help "))
+
 for i in range(len(cogs)):
     cogs[i].setup(client)
 
