@@ -7,3 +7,6 @@ bs4==0.0.1
 selenium==4.0.0
 chromedriver-autoinstaller==0.2.2
 lxml==4.6.3
+asyncio==3.4.3
+beautifulsoup4==4.9.3
+bs4==0.0.1
