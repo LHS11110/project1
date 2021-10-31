@@ -13,5 +13,4 @@ async def on_ready():
 for i in range(len(cogs)):
     cogs[i].setup(client)
 
-access_token = os.environ['BOT_TOKEN']
-client.run(access_token)
+client.run(os.environ['token'])
